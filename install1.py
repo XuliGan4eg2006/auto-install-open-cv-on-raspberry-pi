@@ -14,5 +14,5 @@ os.system("sudo apt-get install protobuf-compiler")
 os.system("mkdir tensorflow1")
 os.system("cd tensorflow1")
 os.system("git clone --depth 1 https://github.com/tensorflow/models.git")
-print("Теперь пропиши комманду sudo nano ~/.bashrc и в конец файла допиши")
-print("export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow1/models/research:/home/pi/tensorflow1/models/research/slim")
+with open(os.path.expanduser("~/.bashrc"), "a") as f:
+	f.write("\n\nexport PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow1/models/research:/home/pi/tensorflow1/models/research/slim")
