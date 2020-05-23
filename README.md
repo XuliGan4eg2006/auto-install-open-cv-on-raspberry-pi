@@ -1,4 +1,5 @@
 # auto-install-open-cv-on-raspberry-pi
+
 Hello everyone! This script will install opencv in 5 minutes! Thanks to Sitting33 for improving it!
 
 Спасибо https://github.com/timas130 (Sitting33) за улучшение кода!
